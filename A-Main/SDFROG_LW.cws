@@ -1,0 +1,220 @@
+[Workspace Header]
+Version = 1500
+Pathname = "/d/Labuser/Desktop/SDFROG_Labwindows/SDFROG_LW.cws"
+CVI Dir = "/c/program files/national instruments/cvi2015"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "SDFROG_LW.prj"
+Drag Bar Left = 269
+Window Top = 30
+Window Left = 444
+Window Bottom = 608
+Window Right = 1184
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 6
+Window Confinement Region Enabled = True
+MainColumnWidth = 252
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1500
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/d/Labuser/Desktop/SDFROG_Labwindows/SDFROG_LW.c"
+File Type = "CSource"
+Disk Date = 3545041811
+In Projects = ""
+Window Top = 62
+Window Left = 26
+Window Z-Order = 2
+Source Window State = "1,21,21,21,10,21,10,0,0,62,0,0,0,0,0,25,0,0,21,21,349,539,1,0,"
+
+[File 0002]
+Path Line0001 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/CD - mercury C863/PI"
+Path Line0002 = "_GCS2_DLL/PI_GCS2_DLL.h"
+File Type = "Include"
+Disk Date = 3545041763
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Window Z-Order = 3
+Source Window State = "1,459,459,459,0,21,21,0,0,62,0,410,0,0,0,25,0,0,459,0,349,539,1,13,"
+
+[File 0003]
+Path = "/d/Labuser/Desktop/SDFROG_Labwindows/SDFROG_LW.h"
+File Type = "Include"
+Disk Date = 3545034157
+In Projects = ""
+Window Top = 30
+Window Z-Order = 6
+Source Window State = "1,0,38,38,0,0,15,0,0,70,0,0,0,0,0,28,0,0,14,38,400,600,1,0,"
+
+[File 0004]
+Path Line0001 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/CD - mercury C863/PI"
+Path Line0002 = "_GCS2_DLL/PI_GCS2_DLL.lib"
+File Type = "Library"
+Disk Date = 3383742610
+In Projects = "1,"
+
+[File 0005]
+Path Line0001 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/CD - mercury C863/PI"
+Path Line0002 = "_GCS2_DLL/PI_GCS2_DLL.dll"
+File Type = "DLL"
+Disk Date = 3383742610
+In Projects = "1,"
+
+[File 0006]
+Path Line0001 = "/d/Labuser/Desktop/MEMS Softwares/MEMS_2nd_generation_2016_04_11_USE_ME_LUIGI_AN"
+Path Line0002 = "D_LUANA/trunk/stepperMotor/stepperMotor.h"
+File Type = "Include"
+Disk Date = 3477573610
+In Projects = ""
+Window Top = 272
+Window Left = 138
+Window Z-Order = 5
+Source Window State = "1,31,32,32,0,21,21,0,3,80,0,0,0,0,0,25,0,0,31,0,349,683,1,0,"
+
+[File 0007]
+Path = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/MotorPIC863.c"
+File Type = "CSource"
+Disk Date = 3545041683
+In Projects = ""
+Window Top = 302
+Window Left = 154
+Window Z-Order = 1
+Source Window State = "1,32,32,32,1,11,11,0,3,114,0,25,0,25,0,56,0,0,32,1,349,683,1,0,"
+
+[File 0008]
+Path = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/MotorPIC863.h"
+File Type = "Include"
+Disk Date = 3545041748
+In Projects = ""
+Window Top = 332
+Window Left = 170
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,3,0,3,0,25,0,0,2,21,349,683,1,0,"
+
+[Tab Order]
+Tab 0001 = "/d/Labuser/Desktop/SDFROG_Labwindows/SDFROG_LW.c"
+Tab 0002 Line0001 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/CD - mercury C863/PI"
+Tab 0002 Line0002 = "_GCS2_DLL/PI_GCS2_DLL.h"
+Tab 0003 = "/d/Labuser/Desktop/SDFROG_Labwindows/SDFROG_LW.h"
+Tab 0004 Line0001 = "/d/Labuser/Desktop/MEMS Softwares/MEMS_2nd_generation_2016_04_11_USE_ME_LUIGI_AN"
+Tab 0004 Line0002 = "D_LUANA/trunk/stepperMotor/stepperMotor.h"
+Tab 0005 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/MotorPIC863.c"
+Tab 0006 = "/d/Labuser/Desktop/SDFROG_Labwindows/PI - PhysikInstrumente/MotorPIC863.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
