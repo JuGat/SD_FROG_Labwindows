@@ -1,0 +1,159 @@
+Information importante afin de créer le dossier convenablement :
+
+Le projet : SDFROG_LW.prj
+
+est enregistré dans /SD_FROG_Labwindows directement. 
+
+
+ATTENTION !!!!!!!!!!!!!!!
+
+A ce niveau du dossier on trouvera également LES DLL ET LIB et la caméra CCD !
+
+
+Structure du Dossier :
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							A-Main
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/A-SDFROG_LW.c
+
+	DOIT comprendre uniquement la fonction "main" dans laquelle nous appelons les différentes interfaces permettant de contrôler :
+
+		- la platine de translation
+		- la caméra CCD
+		- l'interface SD-FROG
+
+/A-SDFROG_LW.uir 
+
+	Est l'interface principale du programme puisqu'elle correspond à l'objectif du programme, soit ici réaliser un SD-FROG
+
+
+	On trouvera également dans ce dossier l'executable
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							B-Folder Motor
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+--- Ce dossier doit être réutilisable pour d'autres application du moteur PI  ---
+
+
+/B-Function_MotorPIC863.c
+
+
+	Avec ce ".c" il est possible de contrôler la platine de translation seule. Différentes fonctions sont créés telles que :
+
+		- init_motor(void)
+		- PI_move_motor(double actual_pos_to_go)
+		- ...
+
+	On trouvera également tous les callbacks créés dans  B-MotorPI.uir / B-MotorPI.tuir    
+
+
+/B-Function_MotorPIC863.h
+
+	Prototype des fonctions du ".c" associé du même nom
+
+/B-MotorPI.uir .tuir
+
+	Interface de la platine de translation elle doit être indépendante du programme principal étant donné qu'elle peut être utilisée pour d'autres applications futures.
+/B-MotorPI.h
+
+
+	".h" de l'interface graphique associé du même nom
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							C-FROG
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/C-Function_Frog_acq.c
+
+	Ici nous trouverons les fonctions permettant de réaliser la mesure du SDFROG. On notera que ces fonctions font fortement appel aux fonction de :
+
+		- B-Function_MotorPIC863.c
+		- D-Function_CCD_camera.c
+
+	On y trouvera par exemple :
+
+		- Acquire_FROG()
+		- Load_FROG()  
+		- ... 
+		
+
+	On trouvera également tous les callbacks créés dans  A-SDFROG_LW.uir / A-SDFROG_LW.tuir   
+
+
+/C-Function_Frog_acq.h
+
+	Prototype des fonctions du ".c" 
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							D-CCD camera
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+--- Ce dossier doit être réutilisable pour d'autres application de la Camera CCD  ---
+
+
+/D-Function_CCD_camera.c
+
+
+	Avec ce ".c" il est possible de contrôler la caméra CCD seule. Différentes fonctions sont créés telles que :
+
+		- USB_init(void)  
+		- Capture_Image(void) 
+		- ...
+
+	On trouvera également tous les callbacks créés dans  D-CCD_camera.uir / D-CCD_camera.tuir    
+
+
+/D-Function_CCD_camera.h
+
+	Prototype des fonctions du ".c" associé du même nom
+
+/D-CCD_camera.uir
+
+	Interface de la caméra CCD elle doit être indépendante du programme principal étant donné qu'elle peut être utilisée pour d'autres applications futures.
+/D-CCD_camera.h
+
+	".h" de l'interface graphique associé du même nom
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
+							Z-Variable
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Toutes les variables devant être partagées doivent être définie dans ce fichier ".h".
+	Il est important de rester très précis sur la provenance des variables et ainsi respecter la définition suivante :
+
+		// Panel Share variables
+			int A_panelHandle,B_panelHandle,D_panelHandle;
+
+		// Motor Share Variables
+			double Current_pos_value;
+
+
+ATTENTION CI-DESSOUS
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
+							PI - PhysikInstrumente
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NE DOIT PAS ÊTRE SAUVER SUR GITHUB IL FAUDRA LE RAJOUTER MANUELLEMENT DANS VOTRE DOSSIER FINAL
+
+
+COMPORTE LES MANUELS PAR EXEMPLE
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////					
+							Hammamatsu CCD array
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NE DOIT PAS ÊTRE SAUVER SUR GITHUB IL FAUDRA LE RAJOUTER MANUELLEMENT DANS VOTRE DOSSIER FINAL
+
+COMPORTE LES MANUELS PAR EXEMPLE		
+
+
